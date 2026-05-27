@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Quốc Vỹ - sinh viên Công nghệ thông tin, định hướng Backend Developer." />
+  <title>Nguyễn Quốc Vỹ | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio sinh viên IT</p>
+        <h1>Nguyễn Quốc Vỹ</h1>
+        <p class="intro">
+          Sinh viên Công nghệ Thông tin định hướng Backend Developer, có nền tảng Python, C# và kinh nghiệm làm việc với bài toán quản lý dữ liệu, chatbot RAG.
+        </p>
+
+        <div class="hero-badges">
+          <span>Backend</span>
+          <span>Python</span>
+          <span>C# / .NET</span>
+          <span>RAG</span>
+        </div>
+      </div>
+
+      <aside class="profile-card gallery-card">
+        <div class="gallery-meta">
+          <p class="gallery-title">Ảnh cá nhân</p>
+          <p class="gallery-subtitle">Bấm mũi tên để xem từng ảnh.</p>
+        </div>
+
+        <div class="gallery-stage" aria-label="Trình xem ảnh cá nhân">
+          <button class="arrow arrow-left" type="button" id="gallery-prev" aria-label="Ảnh trước">‹</button>
+          <figure class="gallery-panel">
+            <img id="gallery-image" src="images/z7871488733373_967e56cac703da5d620a280a57503876.jpg" alt="Ảnh cá nhân 1" />
+          </figure>
+          <button class="arrow arrow-right" type="button" id="gallery-next" aria-label="Ảnh tiếp">›</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="tab-layout" aria-label="Thông tin cá nhân">
+      <input type="radio" name="tabset" id="tab-about" checked />
+      <input type="radio" name="tabset" id="tab-education" />
+      <input type="radio" name="tabset" id="tab-skills" />
+      <input type="radio" name="tabset" id="tab-experience" />
+      <input type="radio" name="tabset" id="tab-projects" />
+      <input type="radio" name="tabset" id="tab-languages" />
+
+      <div class="tab-list" role="tablist" aria-label="Danh mục hồ sơ">
+        <label for="tab-about" role="tab">Giới thiệu</label>
+        <label for="tab-education" role="tab">Học vấn</label>
+        <label for="tab-skills" role="tab">Kỹ năng</label>
+        <label for="tab-experience" role="tab">Kinh nghiệm</label>
+        <label for="tab-projects" role="tab">Dự án</label>
+        <label for="tab-languages" role="tab">Ngoại ngữ</label>
+      </div>
+
+      <div class="tab-panels">
+        <article class="panel panel-about">
+          <div class="panel-heading">
+            <p class="panel-kicker">Tổng quan</p>
+            <h2>Giới thiệu bản thân</h2>
+          </div>
+          <p>
+            Tôi là sinh viên ngành Công nghệ Thông tin, có nền tảng về Python và C#. Tôi đã làm nhiều bài tập và project quản lý dữ liệu bằng các ngôn ngữ này, đồng thời có khả năng sử dụng AI ở mức tương đối. Mục tiêu hiện tại của tôi là phát triển theo hướng Backend Developer và nâng cao năng lực xây dựng hệ thống thực tế.
+          </p>
+          <div class="info-grid">
+            <div class="info-card">
+              <span class="info-label">Định hướng</span>
+              <strong>Backend Developer</strong>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Điểm mạnh</span>
+              <strong>Tư duy hệ thống</strong>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Công cụ</span>
+              <strong>Python, C#, AI</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel panel-education">
+          <div class="panel-heading">
+            <p class="panel-kicker">Nền tảng học tập</p>
+            <h2>Học vấn</h2>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Trường Đại Học Nam Cần Thơ</h3>
+              <p class="meta">09/2022 - hiện tại</p>
+              <p>Cử nhân Công nghệ thông tin. Hiện tại tôi đang là sinh viên năm 4 và chỉ còn một kỳ thi cuối cùng, dự kiến hoàn tất vào 08/06/2026.</p>
+            </div>
+          </div>
+          <div class="chips">
+            <span>Tin học căn bản</span>
+            <span>Tin học nâng cao</span>
+            <span>Anh văn căn bản</span>
+            <span>B1</span>
+          </div>
+        </article>
+
+        <article class="panel panel-skills">
+          <div class="panel-heading">
+            <p class="panel-kicker">Năng lực</p>
+            <h2>Kỹ năng</h2>
+          </div>
+          <div class="skill-columns">
+            <div class="skill-card">
+              <h3>Kỹ năng chính</h3>
+              <div class="skill-bar">
+                <div class="skill-row"><span>Python</span><strong>1 năm</strong></div>
+                <div class="meter"><span style="width: 78%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-row"><span>C#</span><strong>Project thực hành</strong></div>
+                <div class="meter"><span style="width: 72%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-row"><span>AI tools</span><strong>Mức tương đối</strong></div>
+                <div class="meter"><span style="width: 62%"></span></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h3>Kỹ năng mềm</h3>
+              <ul class="soft-list">
+                <li>Chịu được áp lực</li>
+                <li>Giải quyết vấn đề</li>
+                <li>Làm việc nhóm</li>
+                <li>Kỹ năng giao tiếp</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel panel-experience">
+          <div class="panel-heading">
+            <p class="panel-kicker">Thực chiến</p>
+            <h2>Kinh nghiệm làm việc</h2>
+          </div>
+          <div class="timeline-item accent">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>.NET Developer - IVS</h3>
+              <p class="meta">04/2026 - 05/2026</p>
+              <p>Trải nghiệm thực tế trong môi trường .NET giúp tôi hiểu rõ hơn về quy trình phát triển, xử lý dữ liệu và cách phối hợp trong dự án.</p>
+            </div>
+          </div>
+          <div class="note-box">
+            Mục tiêu của tôi là tiếp tục mở rộng kinh nghiệm backend, tập trung vào độ ổn định, khả năng mở rộng và tư duy triển khai thực tế.
+          </div>
+        </article>
+
+        <article class="panel panel-projects">
+          <div class="panel-heading">
+            <p class="panel-kicker">Sản phẩm</p>
+            <h2>Dự án nổi bật</h2>
+          </div>
+          <div class="project-card">
+            <div class="project-tag">RAG / AI</div>
+            <h3>Chatbot Lịch sử Việt Nam</h3>
+            <p>Chatbot hỗ trợ tra cứu và tư vấn lịch sử Việt Nam, sử dụng công nghệ RAG và đang trong quá trình phát triển.</p>
+            <a href="https://vy2004.github.io" target="_blank" rel="noreferrer">vy2004.github.io</a>
+          </div>
+        </article>
+
+        <article class="panel panel-languages">
+          <div class="panel-heading">
+            <p class="panel-kicker">Giao tiếp</p>
+            <h2>Ngoại ngữ</h2>
+          </div>
+          <div class="language-card">
+            <span class="language-name">Tiếng Anh</span>
+            <strong>Trung cấp</strong>
+            <p>Có nền tảng đủ để đọc tài liệu kỹ thuật, theo dõi nội dung học thuật và hỗ trợ trong môi trường phát triển phần mềm.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
